@@ -1,0 +1,77 @@
+.sport-list
+	margin: 0 1px 1px
+	
+	li
+		margin-bottom: 1px
+		
+	a
+		display: block
+		position: relative
+		padding: 0 80px 0 10px
+		background: $header-bg-color
+		color: $sport-list-text-color
+		&:after
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 5px 0 5px 6px
+			border-color: transparent transparent transparent $base-text-color
+			position: absolute
+			right: 8px
+			top: 10px
+			content: ""
+		
+	.ico
+		float: left
+		width: 30px
+		height: 30px
+		margin: 0 5px 0 -9px
+		background-position: 50% !important
+		&.ico-1 // soccer
+			+png(soccer)
+		&.ico-5 // tennis
+			+png(tennis2)
+		&.ico-4 // ice-hockey
+			+png(icehockey)
+		&.ico-2 // basketball
+			+png(basketball)
+		&.ico-3 // baseball
+			+png(baseball)
+		&.ico-6 // handball
+			+png(rugby2)
+		&.ico-23 //volleyball
+			+png(voleyball)
+		&.ico-22 //darts
+			+png(darts)
+		&.ico-12 // rugby
+			+png(rugby)
+		&.ico-21 // cricket
+			+png(cricket)
+		&.ico-29 // futsal
+			+png(footsal)
+	&__name
+		text-transform: uppercase
+		display: block
+		font-size: 14px
+		padding: 7px 0
+		font-weight: bold
+		+text-overflow
+
+	&__quote
+		position: absolute
+		top: 5px
+		right: 25px
+		color: $btn-text-color
+		border-bottom: 1px solid darken($btn-background-color, 20)
+		background: $btn-background-color 
+		font-size: 12px
+		line-height: 19px
+		padding: 0 5px
+		text-align: center
+		font-weight: bold
+		width: 50px
+
+
+
+
+

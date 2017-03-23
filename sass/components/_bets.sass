@@ -1,0 +1,47 @@
+.bets
+	&__type-list
+		position: relative
+		padding: 10px 30px 8px 2px
+		
+		.opener
+			position: absolute
+			top: 20px
+			right: 6px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 10px 10px 0 10px
+			border-color: #000 transparent transparent transparent
+		
+		ul
+			overflow: hidden
+			height: 30px
+		
+		li
+			display: inline-block
+			vertical-align: top
+			margin: 0 1px 3px 0
+			width: 48.5%
+			
+			a
+				display: block
+				text-align: center
+				background: $bet-bg-color
+				color: $bet-text-color
+				font-weight: bold 
+				padding: 8px 3px
+				text-transform: uppercase
+				+text-overflow
+				&.is-active
+					background: $selected-color
+			
+		&.is-open
+			ul
+				height: auto
+				
+			.opener
+				border-width: 0 10px 10px 10px
+				border-color: transparent transparent #000 transparent
+				
+	.page-title
+		margin: 2px 0 

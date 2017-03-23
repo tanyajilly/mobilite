@@ -1,0 +1,54 @@
+.bet-list
+	border-top: 1px solid #d9d9d9
+	
+	.bet
+		background: $light-bg-color
+		border: 1px solid $dark-bg-color
+		padding: 4px 25px 4px 35px
+		min-height: 50px
+		margin: 4px 0
+		position: relative
+		
+		&__remove
+			position: absolute
+			width: 35px
+			height: 100%
+			top: 0
+			left: 0
+			&:after
+				width: 24px
+				height: 24px
+				background: $warning-color
+				position: absolute
+				top: 50%
+				left: 50%
+				margin: -12px 0 0 -12px
+				border-radius: 12px
+				content: "X"
+				color: #fff
+				padding: 5px
+				text-align: center
+		
+		&__code
+			font-size: 11px
+
+		&__teams
+			font-size: 13px
+			font-weight: bold
+			display: block
+			
+		&__holder
+			border: 1px solid $dark-bg-color
+			background: $betslip-holder-bg
+			margin-top: 2px
+			padding: 0 5px
+			line-height: 22px
+			font-weight: bold
+			color: $base-text-color
+			overflow: hidden
+			
+		&__type
+			float: left
+		
+		&__value
+			float: right

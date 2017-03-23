@@ -1,0 +1,50 @@
+.main-menu
+	background: $alt-bg-color
+	padding: 5px 0
+	text-align: center
+	margin-bottom: 10px
+	
+	li
+		display: inline-block
+		margin: 5px 3px
+		
+	a
+		display: block
+		width: 90px
+		padding: 52px 2px 10px
+		background: $light-bg-color
+		border: 2px solid $base-bg-color
+		position: relative
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 10px 
+		position: relative
+		color: $btn-text-color
+		&:active
+			background: lighten($base-bg-color, 50)
+			
+		span
+			display: block
+			+text-overflow
+			font-size: 10px 
+		
+	.ico
+		position: absolute
+		top: 2px
+		left: 20px
+		
+.fast-menu
+	margin-top: 10px
+	li
+		margin-bottom: 1px
+	
+	a
+		display: block
+		padding: 12px 5px
+		font-size: 14px
+		color: $base-text-color
+		+darken($dark-bg-color, 20)
+
+
+
+

@@ -1,0 +1,120 @@
+.info-list
+	background: $base-bg-color
+	margin-bottom: -1px
+	
+	li
+		margin-bottom: 1px
+		background: $dark-bg-color
+		color: $base-text-color
+		line-height: 20px
+		position: relative
+		
+	a
+		color: $base-text-color
+		padding: 8px 40px 8px 35px
+		display: block
+		min-height: 40px
+		&:after
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 8px 0 8px 8px
+			border-color: transparent transparent transparent $base-text-color
+			position: absolute
+			right: 10px
+			top: 20px
+			content: ""
+			
+	&.event-list
+		li
+			min-height: 40px
+			padding: 8px 20px 8px 35px
+
+	
+	.type
+		position: absolute
+		width: 14px
+		height: 14px
+		top: 20px
+		left: 10px
+		&.win
+			background: $win-color
+		&.lost
+			background: $lost-color
+		&.cancel
+			background: $cancel-color
+		&.run
+			background: $run-color
+		&.process
+			background: $process-color    
+			
+	.name,
+	.event
+		display: block
+		font-size: 14px
+		color: $active-text-color
+		margin-bottom: 3px
+		
+	.event
+		color: $bet-type-color
+		
+	.date,
+	.amount,
+	.user
+		display: block
+		
+	.bettype
+		display: block
+		color: $bet-type-color
+		font-size: 14px
+		
+	.result
+		display: block
+		border-top: 1px solid $base-text-color
+		text-align: right 
+		padding-top: 5px
+		
+	.event-odd
+		display: inline-block
+		margin-right: 10px
+		font-size: 14px
+		
+	.event-result
+		display: inline-block
+		font-weight: bold
+		font-size: 14px
+		
+.legend
+	border: solid $legend-border-color 
+	border-width: 3px 0
+	background: $dark-bg-color 
+	color: $base-text-color
+	font-size: 10px
+	padding: 2px 5px
+	margin: 5px 0 
+	overflow: hidden
+	
+	li
+		float: left
+		margin: 5px 3% 5px 0
+		width: 30%
+		+text-overflow
+		&.is-long
+			width: 63%
+		
+	.type
+		display: inline-block
+		vertical-align: middle
+		width: 10px
+		height: 10px
+		margin-right: 10px
+		&.win
+			background: $win-color
+		&.lost
+			background: $lost-color 
+		&.cancel
+			background: $cancel-color
+		&.run
+			background: $run-color
+		&.process
+			background: $process-color    

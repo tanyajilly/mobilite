@@ -1,0 +1,93 @@
+.form
+	padding: 7px
+	
+	&__row
+		margin-bottom: 10px
+		+clr
+		
+	&-betslip
+		.form__row
+			text-align: center
+			
+		.btn
+			margin-left: 10px
+			padding: 0 20px 
+			
+		p
+			margin-bottom: 10px
+
+	&__control
+		padding: 0 8px
+		line-height: 20px
+		border: 1px solid $form-control-border
+		color: $form-control-color
+		background: $form-control-bg
+		min-width: 150px
+		
+	select
+		max-width: 90px
+		
+	&-login
+		.form__label
+			float: left
+			font-weight: bold
+			line-height: 22px
+			font-size: 14px
+		
+		.form__control
+			float: right
+			max-width: 120px
+			
+		.btn
+			display: block
+			margin: 0 auto
+			line-height: 26px
+			width: 130px
+		
+	&-search,
+	&-back
+		padding: 5px 0
+		
+		.form__row
+			margin: 5px 0
+			padding: 0 10px
+			border-bottom: 1px solid $form-control-border
+			line-height: 25px
+			&:last-child
+				border: none
+			
+		.form__label
+			float: left
+			font-weight: bold
+			
+		.form__date,
+		.form__select
+			float: right
+			
+		.btn
+			display: block
+			margin: 10px 0 10px auto
+			line-height: 26px
+			width: 130px
+
+.search
+	padding: 5px 0
+	
+	&__opener
+		background: $btn-primary-bg
+		color: $btn-primary-color
+		padding: 5px 20px
+		display: block
+		font-weight: bold
+		position: relative
+		&:after
+			position: absolute
+			top: 8px
+			left: 5px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 6px 6px 0 6px
+			border-color: $btn-primary-color transparent transparent transparent
+			content: ""
+

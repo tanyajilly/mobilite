@@ -1,0 +1,70 @@
+body
+	color: $base-text-color
+	background: $base-bg-color 
+	+hlb
+	font-size: 12px
+	
+html,
+body
+	width: 100%
+	max-width: 100%
+	position: relative
+
+.hide
+	display: none !important
+
+.wrapper 
+	position: relative
+	overflow: hidden
+	width: 100%
+	
+.inner
+	padding: 5px  
+	
+.header
+	margin-bottom: 10px
+	&__top
+		overflow: hidden
+		margin-bottom: 5px
+
+.page-title
+	font-size: 14px
+	text-align: center
+	background: $title-bg-color
+	color: $title-text-color
+	padding: 5px
+	margin: 0
+	
+h2
+	margin: 0 0 10px 10px
+	
+.content
+	color: $content-text-color
+	background: $content-bg-color
+	overflow: hidden 
+	
+	&__title
+		text-align: center
+		font-size: 14px
+		padding: 5px
+		margin: 0
+		
+	&__tabs
+		overflow: hidden
+		margin: 0 1px 10px 
+		
+		li
+			float: left
+			width: 50%
+			
+			a
+				display: block
+				margin: 0 1px 2px
+				background: $content-tabs-bg
+				color: $content-tabs-color
+				text-align: center
+				font-weight: bold
+				padding: 10px
+				&.is-active
+					background: $content-tabs-bg-active
+					
