@@ -5,17 +5,21 @@
 	font-size: 12px
 	background: $odd-bg-color
 	color: $odd-text-color
-	border: 1px solid #000
 	
 	&__legend
 		display: block
 		font-size: 10px
 		+text-overflow
+		border: 1px solid #000
+		border-bottom-color: $odd-bg-color
 		
 	&__coef
 		display: block
 		line-height: 20px
 		background: $odd-coef-bg-color
 		color: $odd-coef-text-color
+		border: 1px solid #000
+		border-top-color: $odd-coef-bg-color
 		.is-checked &
-			background: $selected-color 
+			background: $selected-color
+			border-top-color: $selected-color
